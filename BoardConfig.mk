@@ -151,7 +151,8 @@ PLATFORM_VERSION_LAST_STABLE := $(PLATFORM_VERSION)
 # TWRP Configuration
 RECOVERY_SDCARD_ON_DATA := true
 TW_THEME := portrait_hdpi
-TW_NO_SCREEN_BLANK := true
+TW_SCREEN_BLANK_ON_BOOT := true
+#TW_NO_SCREEN_BLANK := true
 TW_EXCLUDE_DEFAULT_USB_INIT := true
 TW_EXCLUDE_APEX := true
 TARGET_USES_MKE2FS := true # Use mke2fs to create ext4 images
