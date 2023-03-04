@@ -14,7 +14,7 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/twrp_coful.mk
+    $(LOCAL_DIR)/omni_coful.mk
 
 COMMON_LUNCH_CHOICES := \
-    twrp_coful-eng
+    omni_coful-eng

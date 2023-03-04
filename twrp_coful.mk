@@ -40,7 +40,7 @@ $(call inherit-product-if-exists, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # Device Identifier
 PRODUCT_DEVICE := coful
-PRODUCT_NAME := twrp_coful
+PRODUCT_NAME := omni_coful
 PRODUCT_BRAND := motorola
 PRODUCT_MODEL := moto g31
 PRODUCT_MANUFACTURER := motorola
