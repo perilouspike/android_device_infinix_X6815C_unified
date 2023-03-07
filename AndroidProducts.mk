@@ -14,7 +14,7 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_coful.mk
+    $(LOCAL_DIR)/omni_X6815C.mk
 
 COMMON_LUNCH_CHOICES := \
-    omni_coful-eng
+    omni_X6815C-eng

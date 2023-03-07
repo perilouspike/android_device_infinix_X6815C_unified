@@ -13,13 +13,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-LOCAL_PATH := device/motorola/coful
+LOCAL_PATH := device/infinix/X6815C
 
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # Api level
-PRODUCT_SHIPPING_API_LEVEL := 30
+PRODUCT_SHIPPING_API_LEVEL := 
 
 # Platform
 PRODUCT_PLATFORM := mt6768

@@ -15,6 +15,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),coful)
+ifeq ($(TARGET_DEVICE),X6815C)
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 endif
