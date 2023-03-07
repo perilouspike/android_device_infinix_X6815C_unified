@@ -14,7 +14,7 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_X6815C.mk
+    $(LOCAL_DIR)/twrp_X6815C.mk
 
 COMMON_LUNCH_CHOICES := \
-    omni_X6815C-eng
+    twrp_X6815C-eng

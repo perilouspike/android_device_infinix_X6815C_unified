@@ -4,6 +4,16 @@
 
 # <mount_point>  <fstype>  <device>        <device2>                  <flags>
 
+# Logical partitions.
+/system                   erofs     /dev/block/mapper/system            flags=display="System";logical;slotselect;
+/system_image             emmc      /dev/block/mapper/system            flags=display="System_image";flashimg=1;
+/system_ext               erofs     /dev/block/mapper/system_ext        flags=display="System_ext";logical;slotselect;
+/system_ext               emmc      /dev/block/mapper/system_ext        flags=display="System_ext_image";flashimg=1;
+/vendor                   erofs     /dev/block/mapper/vendor            flags=display="Vendor";logical;slotselect;
+/vendor_image             emmc      /dev/block/mapper/vendor            flags=display="Vendor_image";flashimg=1;
+/product                  erofs     /dev/block/mapper/product           flags=display="Product";logical;slotselect;
+/product_image            emmc      /dev/block/mapper/product           flags=display="Product_image";flashimg=1;
+
 # Vbmeta related partitions.
 /vbmeta                   emmc     /dev/block/by-name/vbmeta            flags=display="Vbmeta";backup=1;flashimg=1;slotselect;
 /vbmeta_vendor            emmc     /dev/block/by-name/vbmeta_vendor     flags=display="Vbmeta_vendor";backup=1;flashimg=1;slotselect;

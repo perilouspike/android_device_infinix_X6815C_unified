@@ -40,7 +40,7 @@ $(call inherit-product-if-exists, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # Device Identifier
 PRODUCT_DEVICE := X6815C
-PRODUCT_NAME := omni_X6815C
+PRODUCT_NAME := twrp_X6815C
 PRODUCT_BRAND := infinix
 PRODUCT_MODEL := X6815C
 PRODUCT_MANUFACTURER := infinix
@@ -48,5 +48,7 @@ PRODUCT_MANUFACTURER := infinix
 PRODUCT_GMS_CLIENTID_BASE := android-$(PRODUCT_RRAND)
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRIVATE_BUILD_DESC="vnd_x6815c_h777-user 12 SP1A.210812.016 212002 release-keys"
 
-BUILD_FINGERPRINT := 
+BUILD_FINGERPRINT := Infinix/X6815C-GL/Infinix-X6815C:12/SP1A.210812.016/230106V605:user/release-keys
+ 
