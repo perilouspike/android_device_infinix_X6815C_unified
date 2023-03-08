@@ -170,6 +170,7 @@ TW_EXCLUDE_DEFAULT_USB_INIT := true
 TW_EXCLUDE_APEX := true
 TARGET_USES_MKE2FS := true # Use mke2fs to create ext4 images
 TW_HAS_MTP := true
+TW_INCLUDE_NTFS_3G := true
 
 # Maintainer/Version
 TW_DEVICE_VERSION := perilouspike
@@ -192,9 +193,9 @@ TW_USE_TOOLBOX := true
 TW_QCOM_ATS_OFFSET := 1617714502203
 
 # Crypto
-#TW_INCLUDE_CRYPTO := true
-#TW_INCLUDE_CRYPTO_FBE := true
-#TW_INCLUDE_FBE_METADATA_DECRYPT := true
+TW_INCLUDE_CRYPTO := true
+TW_INCLUDE_CRYPTO_FBE := true
+TW_INCLUDE_FBE_METADATA_DECRYPT := true
 
 # Statusbar icon flags
 TW_STATUS_ICONS_ALIGN := center
