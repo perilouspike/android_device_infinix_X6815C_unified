@@ -166,6 +166,7 @@ RECOVERY_SDCARD_ON_DATA := true
 TW_THEME := portrait_hdpi
 #TW_SCREEN_BLANK_ON_BOOT := true
 TW_NO_SCREEN_BLANK := true
+TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_EXCLUDE_DEFAULT_USB_INIT := true
 TW_EXCLUDE_APEX := true
 TARGET_USES_MKE2FS := true # Use mke2fs to create ext4 images
@@ -181,13 +182,13 @@ TW_DEFAULT_BRIGHTNESS := 500
 TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
 
 # Include some binaries
-TW_INCLUDE_LIBRESETPROP := true
+#TW_INCLUDE_LIBRESETPROP := true
 TW_INCLUDE_REPACKTOOLS := true
-TW_INCLUDE_RESETPROP := true
-TW_INCLUDE_BASH := true
+#TW_INCLUDE_RESETPROP := true
+#TW_INCLUDE_BASH := true
 
 # Use Toolbox instead of Busybox
-TW_USE_TOOLBOX := true
+#TW_USE_TOOLBOX := true
 
 # drift/offset
 TW_QCOM_ATS_OFFSET := 1617714502203
@@ -211,7 +212,7 @@ TARGET_USES_LOGD := true
 TW_INCLUDE_FUSE_EXFAT := true
 
 # NTFS Support
-TW_INCLUDE_FUSE_NTFS := true
+#TW_INCLUDE_FUSE_NTFS := true
 
 # Excludes
 TW_EXCLUDE_TWRP_APP := true
@@ -219,3 +220,76 @@ TW_EXCLUDE_TWRP_APP := true
 # Property Override
 #TW_OVERRIDE_SYSTEM_PROPS := \
     #"ro.build.date.utc;ro.bootimage.build.date.utc=ro.build.date.utc;ro.odm.build.date.utc=ro.build.date.utc;ro.product.build.date.utc=ro.build.date.utc;ro.system.build.date.utc=ro.build.date.utc;ro.system_ext.build.date.utc=ro.build.date.utc;ro.vendor.build.date.utc=ro.build.date.utc;ro.build.product;ro.build.fingerprint=ro.system.build.fingerprint;ro.build.version.incremental;ro.product.device=ro.product.system.device;ro.product.model=ro.product.system.model;ro.product.name=ro.product.system.name"
+
+
+####################################################################
+# SHRP stuffs - specific lines                                     #                        
+####################################################################
+# NOTE - Dont use '-' or blank spaces in flag values , otherwise it will create build errors or other bugs in recovery (Excluding SHRP_PATH,SHRP_REC).
+
+
+# Mandatory flags
+
+# Path of your SHRP Tree *
+SHRP_PATH := device/infinix/X8615C
+# Maintainer name *
+SHRP_MAINTAINER := perilouspike
+# Device codename *
+SHRP_DEVICE_CODE := X8615C
+# Recovery Type (It can be treble,normal,SAR) [Only for About Section] *
+SHRP_REC_TYPE := Treble
+# Recovery Type (It can be A/B or A_only) [Only for About Section] *
+SHRP_DEVICE_TYPE := A/B
+# Use this flag only if your device is A/B or Virtual A/B.
+SHRP_AB := true
+
+# Important flags
+
+# Storage paths, put your device's storage paths from fstab *
+SHRP_INTERNAL := /sdcard
+# External SDcard path
+SHRP_EXTERNAL := /external_sd
+# USB OTG path
+SHRP_OTG := /usb_otg
+# Put 0 to disable flashlight *
+SHRP_FLASH := 1
+
+# Optional flags
+
+# SHRP padding flag (for rounded corner devices only). You have to change these values according to your device's roundness.
+SHRP_STATUSBAR_RIGHT_PADDING := 48
+SHRP_STATUSBAR_LEFT_PADDING := 48
+# SHRP Express, enables on-the-fly theme patching (also persistent) + persistent lock [Optional]
+SHRP_EXPRESS := true
+# SHRP Express use Data save shrp files inside /data instead of /system
+SHRP_EXPRESS_USE_DATA := true
+# Max Brightness of LED [Optional]
+SHRP_FLASH_MAX_BRIGHTNESS := 200
+# Custom led paths for flashlight
+SHRP_CUSTOM_FLASHLIGHT := true
+SHRP_FONP_1 := /sys/devices/virtual/torch/torch/torch_level
+# Do not include the SHRP theming system
+SHRP_LITE := true
+
+
+# Default addons
+
+# SHRP_SKIP_DEFAULT_ADDON_X := true
+# --> will not add this addon
+# INC_IN_REC_ADDON_X := true
+# --> will add this addon & store it within the recovery ramdisk (i.e. NOT in the internal storage!)
+
+# Addon - Substratum Overlay (OMS -Normal- disabler)
+SHRP_SKIP_DEFAULT_ADDON_1 := true
+
+# Addon - Substratum Overlay (OMS -legacy- disabler)
+SHRP_SKIP_DEFAULT_ADDON_2 := true
+
+# Addon - Clear Fingerprint (remove fingerprint lock from system)
+SHRP_SKIP_DEFAULT_ADDON_3 := true
+
+# Addon - Force Encryption (remove force encryption from your device)
+SHRP_SKIP_DEFAULT_ADDON_4 := true
+
+# To hide the prebuilt magisk flash option from recovery.
+SHRP_EXCLUDE_MAGISK_FLASH := true
