@@ -33,7 +33,7 @@ fi
 if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	# Initial Exports
 	export ALLOW_MISSING_DEPENDENCIES=true
-	#export FOX_USE_TWRP_RECOVERY_IMAGE_BUILDER=1
+	export FOX_USE_TWRP_RECOVERY_IMAGE_BUILDER=1
     export LC_ALL="C"
 
     # Version / Maintainer infos.
@@ -143,7 +143,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
     # Enable the flashlight feature.
 	export OF_FLASHLIGHT_ENABLE=1
 	# Set custom flashlight path.
-	export OF_FL_PATH1="/tmp/flashlight" # See /init.recovery.mt6877.rc for more information
+	export OF_FL_PATH1="/sys/devices/virtual/torch/torch/torch_level"
 
 	# let's see what are our build VARs
 	if [ -n "$FOX_BUILD_LOG_FILE" -a -f "$FOX_BUILD_LOG_FILE" ]; then
