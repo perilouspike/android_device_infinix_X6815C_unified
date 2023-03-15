@@ -33,7 +33,7 @@ fi
 if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	# Initial Exports
 	export ALLOW_MISSING_DEPENDENCIES=true
-	#export FOX_USE_TWRP_RECOVERY_IMAGE_BUILDER=1
+	export FOX_USE_TWRP_RECOVERY_IMAGE_BUILDER=1
     export LC_ALL="C"
 
     # Version / Maintainer infos.
@@ -131,7 +131,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
     # Not reset OrangeFox settings to defaults.
     export FOX_RESET_SETTINGS=1
 	# For removing the aapt binary from the build for reducing the size of the recovery.
-	export FOX_REMOVE_AAPT=1
+	export FOX_REMOVE_AAPT=0
 	# 40-second countdown.
 	export OF_CHECK_OVERWRITE_ATTEMPTS=1
     # Enable the advanced security features.

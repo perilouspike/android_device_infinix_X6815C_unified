@@ -182,13 +182,13 @@ TW_DEFAULT_BRIGHTNESS := 500
 TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
 
 # Include some binaries
-#TW_INCLUDE_LIBRESETPROP := true
+TW_INCLUDE_LIBRESETPROP := true
 TW_INCLUDE_REPACKTOOLS := true
-#TW_INCLUDE_RESETPROP := true
-#TW_INCLUDE_BASH := true
+TW_INCLUDE_RESETPROP := true
+TW_INCLUDE_BASH := true
 
 # Use Toolbox instead of Busybox
-#TW_USE_TOOLBOX := true
+TW_USE_TOOLBOX := true
 
 # drift/offset
 TW_QCOM_ATS_OFFSET := 1617714502203
@@ -212,7 +212,7 @@ TARGET_USES_LOGD := true
 TW_INCLUDE_FUSE_EXFAT := true
 
 # NTFS Support
-#TW_INCLUDE_FUSE_NTFS := true
+TW_INCLUDE_FUSE_NTFS := true
 
 # Excludes
 TW_EXCLUDE_TWRP_APP := true
@@ -267,7 +267,7 @@ SHRP_EXPRESS_USE_DATA := true
 SHRP_FLASH_MAX_BRIGHTNESS := 200
 # Custom led paths for flashlight
 SHRP_CUSTOM_FLASHLIGHT := true
-SHRP_FONP_1 := /sys/devices/virtual/torch/torch/torch_level
+#SHRP_FONP_1 := /sys/devices/virtual/torch/torch/torch_level
 # Do not include the SHRP theming system
 SHRP_LITE := true
 
