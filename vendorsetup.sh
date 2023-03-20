@@ -144,6 +144,9 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	#export OF_FLASHLIGHT_ENABLE=1
 	# Set custom flashlight path.
 	#export OF_FL_PATH1="/sys/devices/virtual/torch/torch/torch_level"
+    # MIUI OTA, and dm-verity/forced-encryption patching will be disabled
+	export OF_DISABLE_MIUI_SPECIFIC_FEATURES=1
+
 
 	# let's see what are our build VARs
 	if [ -n "$FOX_BUILD_LOG_FILE" -a -f "$FOX_BUILD_LOG_FILE" ]; then
