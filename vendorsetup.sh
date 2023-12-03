@@ -127,7 +127,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
     # Attempts to reduce the size of the recovery image.
     export FOX_DRASTIC_SIZE_REDUCTION=1
 	# Disable some operations relating only to Samsung devices.
-	export OF_NO_SAMSUNG_SPECIAL=1
+	#export OF_NO_SAMSUNG_SPECIAL=1
     # Not reset OrangeFox settings to defaults.
     export FOX_RESET_SETTINGS=1
 	# For removing the aapt binary from the build for reducing the size of the recovery.
@@ -145,7 +145,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	# Set custom flashlight path.
 	#export OF_FL_PATH1="/sys/devices/virtual/torch/torch/torch_level"
     # MIUI OTA, and dm-verity/forced-encryption patching will be disabled
-	export OF_DISABLE_MIUI_SPECIFIC_FEATURES=1
+	export #OF_DISABLE_MIUI_SPECIFIC_FEATURES=1
 
 
 	# let's see what are our build VARs
