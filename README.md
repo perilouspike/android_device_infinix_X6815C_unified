@@ -1,12 +1,12 @@
-# Infinix Zero 5G 2023
+#  Infinix Zero 5G 2023 Turbo
                                                  
-The Infinix Xero 5G 2023 (codenamed _'X6815C'_) is a mid-range smartphone launched in 2023, 4th February.
+The Infinix Zero 5G 2023 Turbo (codenamed _X6815C_) is a mid-range smartphone launched in 2023, 4th February.
 
 ## Device specifications
 
-| Device                  | Infinix Zero 5G 2023                                       |
+| Device                  | Infinix Zero 5G 2023 Turbo                                       |
 | ----------------------- | :---------------------------------------------------------- |
-| SoC                     | Mediatek MT6877V Dimensity 1080                               |
+| SoC                     | MediaTek Dimensity 1080 MT6877TT                               |
 | CPU                     | Octa-core (2x2.6 GHz Cortex-A78 & 6x2.0 GHz Cortex-A55)     |
 | GPU                     | Mali-G68 MC4                                                  |
 | Memory                  | 8GB RAM                                                     |
@@ -21,6 +21,6 @@ The Infinix Xero 5G 2023 (codenamed _'X6815C'_) is a mid-range smartphone launch
 | Rear camera 3           | 2 MP, (depth)                                      |
 | Selfie camera            | 16 MP, f/2.0, (wide), 1/3", 1.0µm                     |
 
-## Infinix Zero 5G 2023
+## Infinix Zero 5G 2023 Turbo 
 
-![image](https://i.gadgets360cdn.com/products/large/infinix-5g-db-709x800-1675503791.jpg?downsize=*:420&output-quality=80)
+![image](https://i.gadgets360cdn.com/products/large/turbo-db-709x800-1675504093.jpg)
